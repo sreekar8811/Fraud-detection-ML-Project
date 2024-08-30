@@ -1,0 +1,156 @@
+Python 3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]
+Type "copyright", "credits" or "license" for more information.
+
+IPython 7.31.1 -- An enhanced Interactive Python.
+
+runfile('C:/Users/sreekar/.spyder-py3/untitled25.py', wdir='C:/Users/sreekar/.spyder-py3')
+   step      type    amount  ... newbalanceDest  isFraud  isFlaggedFraud
+0     1   PAYMENT   9838.64  ...              0        0               0
+1     1   PAYMENT   1864.28  ...              0        0               0
+2     1  TRANSFER    181.00  ...              0        1               0
+3     1  CASH_OUT    181.00  ...              0        1               0
+4     1   PAYMENT  11668.14  ...              0        0               0
+
+[5 rows x 11 columns]
+step              0
+type              0
+amount            0
+nameOrig          0
+oldbalanceOrg     0
+newbalanceOrig    0
+nameDest          0
+oldbalanceDest    0
+newbalanceDest    0
+isFraud           0
+isFlaggedFraud    0
+dtype: int64
+PAYMENT     3
+TRANSFER    1
+CASH_OUT    1
+Name: type, dtype: int64
+
+ 
+Warning
+Figures now render in the Plots pane by default. To make them also appear inline in the Console, uncheck "Mute Inline Plotting" under the Plots pane options menu.
+ isFraud           1.000000
+oldbalanceDest    0.612372
+newbalanceOrig   -0.573870
+oldbalanceOrg    -0.596495
+amount           -0.749064
+step                   NaN
+newbalanceDest         NaN
+isFlaggedFraud         NaN
+Name: isFraud, dtype: float64
+   step  type    amount  ... newbalanceDest   isFraud  isFlaggedFraud
+0     1     1   9838.64  ...              0  no Fraud               0
+1     1     1   1864.28  ...              0  no Fraud               0
+2     1     2    181.00  ...              0     Fraud               0
+3     1     0    181.00  ...              0     Fraud               0
+4     1     1  11668.14  ...              0  no Fraud               0
+
+[5 rows x 11 columns]
+Decision Tree Model Accuracy: 0.0
+Decision Tree Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       1.0
+           1       0.00      0.00      0.00       0.0
+
+    accuracy                           0.00       1.0
+   macro avg       0.00      0.00      0.00       1.0
+weighted avg       0.00      0.00      0.00       1.0
+
+Decision Tree Confusion Matrix:
+[[0 1]
+ [0 0]]
+
+Logistic Regression Model Accuracy: 1.0
+Logistic Regression Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00         1
+
+    accuracy                           1.00         1
+   macro avg       1.00      1.00      1.00         1
+weighted avg       1.00      1.00      1.00         1
+
+Logistic Regression Confusion Matrix:
+[[1]]
+
+Random Forest Model Accuracy: 1.0
+Random Forest Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00         1
+
+    accuracy                           1.00         1
+   macro avg       1.00      1.00      1.00         1
+weighted avg       1.00      1.00      1.00         1
+
+Random Forest Confusion Matrix:
+[[1]]
+
+Gradient Boosting Model Accuracy: 1.0
+Gradient Boosting Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00         1
+
+    accuracy                           1.00         1
+   macro avg       1.00      1.00      1.00         1
+weighted avg       1.00      1.00      1.00         1
+
+Gradient Boosting Confusion Matrix:
+[[1]]
+
+SVM Model Accuracy: 0.0
+SVM Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       1.0
+           1       0.00      0.00      0.00       0.0
+
+    accuracy                           0.00       1.0
+   macro avg       0.00      0.00      0.00       1.0
+weighted avg       0.00      0.00      0.00       1.0
+
+SVM Confusion Matrix:
+[[0 1]
+ [0 0]]
+
+k-NN Model Accuracy: 0.0
+k-NN Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       1.0
+           1       0.00      0.00      0.00       0.0
+
+    accuracy                           0.00       1.0
+   macro avg       0.00      0.00      0.00       1.0
+weighted avg       0.00      0.00      0.00       1.0
+
+k-NN Confusion Matrix:
+[[0 1]
+ [0 0]]
+
+Neural Network Model Accuracy: 1.0
+Neural Network Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00         1
+
+    accuracy                           1.00         1
+   macro avg       1.00      1.00      1.00         1
+weighted avg       1.00      1.00      1.00         1
+
+Neural Network Confusion Matrix:
+[[1]]
+
+  _warn_prf(average, modifier, msg_start, len(result))
+Prediction with Decision Tree for features [[4.0000e+00 9.0006e+03 9.0006e+03 0.0000e+00]]: no Fraud
+Prediction with Logistic Regression for features [[4.0000e+00 9.0006e+03 9.0006e+03 0.0000e+00]]: Fraud
+Prediction with Random Forest for features [[4.0000e+00 9.0006e+03 9.0006e+03 0.0000e+00]]: Fraud
+Prediction with Gradient Boosting for features [[4.0000e+00 9.0006e+03 9.0006e+03 0.0000e+00]]: Fraud
+Prediction with SVM for features [[4.0000e+00 9.0006e+03 9.0006e+03 0.0000e+00]]: Fraud
+Prediction with k-NN for features [[4.0000e+00 9.0006e+03 9.0006e+03 0.0000e+00]]: Fraud
+Prediction with Neural Network for features [[4.0000e+00 9.0006e+03 9.0006e+03 0.0000e+00]]: Fraud
